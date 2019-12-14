@@ -65,12 +65,12 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-
 .container {
 	width: 880px;
 	margin: auto;
 	padding:  20px 20px 100px 20px;
 }
+
 
 .subheader{
 	display:flex;
@@ -88,8 +88,9 @@ header nav {
 }
 
 header nav a {
-	margin: 0 20px;
-	color: lightgrey;
+	font-size: 20px;
+	margin: 10px 30px 0 0;
+	color: grey;
 	text-decoration: none;
 	text-align: center;
 }
@@ -97,16 +98,16 @@ header nav a {
 h1 {
 	font-size: 80px;
 	display: flex;
-	justify-content: center;
+	
 }
 
+h2 {
+	font-size: 30px;
+}
 .cta-container {
-	display: block;
-}
-
-.start {
-	width: 400px;
-	border: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
 }
 
 .top p, .bottom p {
@@ -114,37 +115,81 @@ h1 {
 	width: 40%;
 }
 
-.boxes{
+.info {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	flex-wrap: wrap;
+	margin: 20px 0 10px 0;
+}
+
+.boxes{
+	display: flex;
+	justify-content: space-between;
+	width: 20%;
+}
+
+.left, .right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
 }
 
 #box1, #box2, #box3, 
 #box4, #box5, #box6 {
-	background: lightgrey;
-	width: 500px;
-	height: 100px;
-	border: 2px solid black;
+	background: #f2f2f2;
+	margin: 20px;
+	padding: 18px;
+	width: 400px;
+	height: 200px;
+	border: 1px solid black;
 
 }
 
-.end {
+button {
+	border-radius: 4px;
+	background-color: rgba(255, 255, 255, 0.959);
+  	color: black;
+	border: 1px solid black;
+	padding: 5px 20px 5px 20px;
+}
+
+
+footer {
+	margin: 20px;
+}
+.end1 {
 	display:flex;
+	flex-direction: column;
 	justify-content: space-around;
+}
+
+.end2 {
+	padding: 30px;
+	display:flex;
+	justify-content: center;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .poll {
 	display: flex;
-
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: space-between;
 }
+
+/*
+.poll ul {
+	list-style-position: square;
+}
+*/
 
 .poll a {
 	color: black;
 	text-decoration: none;
 	font-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .services-info-img {
@@ -152,10 +197,10 @@ h1 {
 	justify-content: flex-end;
 	align-items: center;
 	size: 200px;
-	box-sizing: border-box;
 }
 
 .copyright{
 	display: flex;
 	justify-content: center;
+	margin: 40px;
 }
